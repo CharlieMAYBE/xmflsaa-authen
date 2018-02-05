@@ -27,8 +27,14 @@ sudo chmod 777 /data/db
 npm install mongoose
 node index.js
 ```
-5. Git clone repo to cloud
+5. Git clone repo to cloud and start server
+```
+git clone https://github.com/bcmsbond/xmflsaa-authen.git
+npm install
+npm start
+```
 
+6. Browser www.xmfls.club:3000
 
 History:
 
@@ -37,6 +43,6 @@ History:
 * 11/12/2017 Alumni can be searched by name or class year
 * 12/20/2017 Complete name list of alumni from 1988 to 2017
 * Authenticate alumni from signup list
-* 2/5/2018 Finish backend and a single-page frontend
+* 2/5/2018 Finish backend and a single-page website
 
 Todos:
