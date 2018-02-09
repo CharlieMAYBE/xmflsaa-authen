@@ -4,9 +4,9 @@ import bodyParser from 'body-parser';
 import routes from './server/routes/graduateRoute';
 
 const app = express();
-const PORT = 3000; // 3000 for dev
-//const DSN = 'mongodb://111.230.43.157/xmflsaa';
-const DSN = 'mongodb://localhost:27017/xmflsaa';
+const PORT = 80; // 3000 for dev
+const DSN = 'mongodb://111.230.43.157/xmflsaa';
+//const DSN = 'mongodb://localhost:27017/xmflsaa';
 
 // mongoose connection
 mongoose.connect(DSN).then(() => {
