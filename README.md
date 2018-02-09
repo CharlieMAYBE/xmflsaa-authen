@@ -14,7 +14,7 @@ Resource:
 
 Procedure:
 
-1. Install Mongo Server `sudo apt install mongodb-server`
+1. Install MongoDB v3.6.2 `sudo apt install mongodb-server`
 2. Create database directory and give access 
 ```
 sudo mkdir -p /data/db
@@ -26,12 +26,13 @@ sudo chmod 777 /data/db
 ```
 npm install mongoose
 node index.js
+mongod --bind_ip_all
 ```
 5. Git clone repo to cloud and start server
 ```
 git clone https://github.com/bcmsbond/xmflsaa-authen.git
-npm install
-npm start
+sudo npm install
+forever start -c "sudo npm start" ./
 ```
 
 6. Browser www.xmfls.club:3000

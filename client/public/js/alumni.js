@@ -15,8 +15,11 @@ function printAlumni(res) {
 	}
 	else {
 		res.forEach((item) => {
-			let msg = item.basic.name + '，' + item.basic.gender + '，' +  item.basic.year + '届校友，厦外人护照号' + item.passport.passportNumber + '，累积捐款' + item.involvement.donation + '元，服务时间' + item.involvement.serviceHour + '小时。';
-			$('<dt>').text(msg).appendTo('body>dl');
+			let one = (item.passport.isGiven === true) ? '已领取':'未领取';
+			$('<dt>').text(item.basic.name + ' ' + item.basic.gender + ' ' +  item.basic.year + '届校友').appendTo('body>dl');
+			$('<dt>').text(one + '厦外人护照 编号：' + item.passport.passportNumber).appendTo('body>dl');
+			$('<dt>').text('服务时间: ' + item.involvement.serviceHour + '小时').appendTo('body>dl');
+			$('<dt>').text('累积捐款: ' + item.involvement.donation + '元').appendTo('body>dl');
 		});
 	}
 }
