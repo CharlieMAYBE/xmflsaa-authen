@@ -6,23 +6,23 @@ Build an one-page website that allows xmfls alumni to check their xmflsaa member
 
 Resource:
 
-1. Tencent VPC ubuntu@111.230.43.157
+1. Tencent VPC ubuntu@139.199.63.52
 2. Domain: www.xmfls.club
 3. Use Nodejs for backend
 4. Use MongoDB for database
-5. USe Github for remote repo 
+5. USe Github for remote repo
 
 Procedure:
 
 1. Install MongoDB v3.6.2 `sudo apt install mongodb-server`
-2. Create database directory and give access 
+2. Create database directory and give access
 ```
 sudo mkdir -p /data/db
 sudo chmod 777 /data
 sudo chmod 777 /data/db
 ```
-3. Copy files to cloud `scp -i ../BCD_Admin database/* ubuntu@111.230.43.157:~/database`
-4. Import data to cloud database 
+3. Copy files to cloud `scp -i ../BCD_Admin database/* ubuntu@139.199.63.52:~/database`
+4. Import data to cloud database
 ```
 npm install mongoose
 node index.js

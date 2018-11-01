@@ -5,7 +5,7 @@ import routes from './server/routes/graduateRoute';
 
 const app = express();
 const PORT = 80; // 3000 for dev
-const DSN = 'mongodb://111.230.43.157/xmflsaa';
+const DSN = 'mongodb://139.199.63.52/xmflsaa';
 //const DSN = 'mongodb://localhost:27017/xmflsaa';
 
 // mongoose connection
@@ -17,7 +17,7 @@ mongoose.connect(DSN).then(() => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// display request 
+// display request
 app.use((req, res, next) => {
 	console.log(`${req.method} request for ${req.url} - ${JSON.stringify(req.body)}`);
 	next();

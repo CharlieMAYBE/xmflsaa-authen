@@ -1,6 +1,6 @@
 {
   "name": "alum-management",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "XMFLS alumni management system",
   "main": "index.js",
   "scripts": {
